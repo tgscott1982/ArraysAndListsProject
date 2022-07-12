@@ -24,30 +24,30 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
-            //foreach(var thingy in digits) ////for each loop
-            //{
-            //    if(thingy % 2 == 0)
-            //    {
-            //        notOdd.Add(thingy);
-            //    }
-            //    else
-            //    {
-            //        notEven.Add(thingy);
-            //    }
-            //}
-
-            for(int i = 0; i < digits.Length; i++) ////for loop
+            foreach (var thingy in digits) //for each loop
             {
-                if (digits[i] % 2 == 0)
+                if (thingy % 2 == 0)
                 {
-                    notOdd.Add(digits[i]);
+                    notOdd.Add(thingy);
                 }
                 else
                 {
-                    notEven.Add(digits[i]);
+                    notEven.Add(thingy);
                 }
             }
-            
+
+            //for (int i = 0; i < digits.Length; i++) //for loop
+            //{
+            //    if (digits[i] % 2 == 0)
+            //    {
+            //        notOdd.Add(digits[i]);
+            //    }
+            //    else
+            //    {
+            //        notEven.Add(digits[i]);
+            //    }
+            //}
+
             /* Now using foeach or for loops,
              * display each List of even and odd numbers
              *
